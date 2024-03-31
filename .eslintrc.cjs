@@ -9,6 +9,7 @@ module.exports = {
     '@vue/typescript/recommended',
     'plugin:prettier/recommended',
     'prettier',
+    'plugin:vuejs-accessibility/recommended',
   ],
   parserOptions: {
     ecmaVersion: 2020,
@@ -17,4 +18,5 @@ module.exports = {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
   },
+  plugins: ['vuejs-accessibility'],
 };
