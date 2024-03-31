@@ -7,8 +7,9 @@
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
-    "lint": "eslint --ext .js,.ts,.vue --ignore-path .gitignore .",
-    "format": "prettier --write ."
+    "lint": "eslint --ext .js,.ts,.vue --ignore-path .gitignore . --fix",
+    "format": "prettier --write .",
+    "prepare": "husky install"
   },
   "dependencies": {
     "vue": "^3.4.21"
@@ -26,6 +27,7 @@
     "prettier": "^3.2.5",
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
-    "vue-tsc": "^2.0.6"
+    "vue-tsc": "^2.0.6",
+    "husky": "^8.0.0"
   }
 }
